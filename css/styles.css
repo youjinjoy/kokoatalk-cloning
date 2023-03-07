@@ -5,38 +5,16 @@ Google Font 검색 - 폰트 선택 - 폰트 옵션 선택 - 오른쪽 상단 Sel
 
 [import된 Tilt Neon 사용법] font-family: 'Tilt Neon', cursive; 를 body에 입력
 */
+
+@import "reset.css";
+/*브라우저에서 부여한 원치않는 속성들 제거. 구글에 reset.css 검색하여 코드 찾으면 됨. */
+
+@import "status-bar.css";
+/*다른 스크린에도 상태바는 계속 필요하므로 새로운 css 파일 status-bar.css 만들어 import 하기.
+코드가 더 보기 좋아지고, styles.css는 앞으로 다른 css 코드를 합치는 용도로 쓰자. */
+
+
 body{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* -apple-system 글꼴이 없다면 다음 글꼴로 BlinkMacSystemFont, 없다면 다음 글꼴로 Segoe UI, ... 선택함. */
-}
-
-/* .status-bar에서 No Service, Time, Battery를 한 줄에 놔준다. --> */
-.status-bar{
-     display: flex;
-     justify-content: center;   /* css hack(center a container) [1] */
-     /* justify-content: space-between을 사용해도 좋지만 각 요소들이 다른 width를 갖고있기 때문에 조금 안 맞는 단점이 있음.
-    대신 컨테이너 하나를 중심에 놓는 법이 있음. 어떤 이유인 지 모르나 작동됨.
-    css hack(center a container) [1]~[4] */
-}
-
-.status-bar__column{
-    width: 33%; /* css hack(center a container) [2] */
-}
-
-/* No service와 wifi icon 간 공간을 주기 위함 */
-.status-bar__column:first-child span{
-    margin-right: 5px;
-}
-
-.status-bar__column:nth-child(2) span{
-    display: flex;
-    justify-content: center; /* css hack(center a container) [3] */
-}
-.status-bar__column:last-child {
-    display: flex;
-    justify-content: flex-end; /* css hack(center a container) [4] */
-}
-
-.status-bar__column:last-child .fa-battery-half{
-    margin: 0 5px;
 }
