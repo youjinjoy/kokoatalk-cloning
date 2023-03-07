@@ -1,0 +1,63 @@
+<!-- 대부분의 웹 서버가 디폴트로 index.html을 찾아보도록 설정되어 있다. -->
+<!-- screenshot\02.png 와 매칭됨. -->
+<!-- '느낌표' 입력하여 엔터 누르면 정해진 코드 개요 나옴. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to KoKoa Clone</title>
+  </head>
+  <body>
+    <!-- 상태바 -->
+    <div class="status-bar">
+      <!-- 상태바를 보면 3개의 column을 가지고 있어 class가 status-bar인 div 안에 3개의 div를 만들어준다. -->
+      <div class="status-bar__column">
+        <!-- column은 너무 흔해 어떤 것의 column인지 헷갈리니까 클래스 이름으로 쓰는게 좋음. BEM 방식 사용.-->
+        <!-- Wifi Icon (From FontAwesome) -->
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+        <!-- 참고: fa-2x, fa-lg 등 클래스에 추가하여 아이콘 크기 조절 가능-->
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>50%</span>
+        <!-- Battery Icon (From FontAweSome)-->
+        <i class="fa-solid fa-battery-half" style="color: rgb(75, 211, 37)"></i>
+        <!-- Lightning Icon Icon (From FontAwesome)-->
+        <i class="fa-solid fa-bolt-lightning"></i>
+        <!-- FontAwesome에서 Code Kit 복사/붙여넣기 해준 것 -->
+        <script
+          src="https://kit.fontawesome.com/612dc86cae.js"
+          crossorigin="anonymous"
+        ></script>
+      </div>
+    </div>
+    <!-- 헤더 -->
+    <header class="welcome-header">
+      <!-- 코코아톡 프로젝트에서 header가 다른 파일에서도 엄청 많을텐데 어떤 header를 가리키는지 알려줄 필요가 있어 클래스 써주어야 함. -->
+      <!-- 상태바와 마찬가지로 헤더 내용도 BEM 방식으로 class 명 작성. 나중에 CSS 작성 시 편리해짐. -->
+      <h1 class="welcome-header__title">Welcome to KoKoa Clone</h1>
+      <h2 class="welcome-header__text">
+        If you have a KoKoa Account, log in with your email or phone number
+      </h2>
+    </header>
+    <!-- 폼, 버튼을 포함한 모든 것들을 form 안으로. -->
+    <form id="login-form">
+      <!-- form의 경우 이번 프로젝트에서 많이 쓰이지 않으므로 class 설정해주지 않아도 괜찮음. 연습용으로 이번엔 id를 줄 것임. -->
+      <input type="text" placehodler="Email or phone number" />
+      <input type="password" placehodler="Password" />
+      <!-- 폼에서 버튼 만드는 법 (1)아래와 같이 type="submit" 사용 (2)<button>태그 사용 -->
+      <input type="submit" value="Log In" />
+      <input type="submit" value="Sign Up" />
+
+      <!-- <a>의 경우 form에서 빼도 되지만 form 안에 넣은 이유: 링크가 매우 많을 거라서 이를 위한 id나 class를 따로 추가하고 싶지 않기 때문임. -->
+      <!-- href="#": same page-->
+      <a href="#">Find KoKoa Account or Password</a>
+    </form>
+  </body>
+</html>
