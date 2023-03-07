@@ -5,6 +5,7 @@
      /* justify-content: space-between을 사용해도 좋지만 각 요소들이 다른 width를 갖고있기 때문에 조금 안 맞는 단점이 있음.
     대신 컨테이너 하나를 중심에 놓는 법이 있음. 어떤 이유인 지 모르나 작동됨.
     css hack(center a container) [1]~[4] */
+    padding: 5px 3px;
 }
 
 .status-bar__column{

@@ -37,20 +37,22 @@
         ></script>
       </div>
     </div>
+
     <!-- 헤더 -->
     <header class="welcome-header">
       <!-- 코코아톡 프로젝트에서 header가 다른 파일에서도 엄청 많을텐데 어떤 header를 가리키는지 알려줄 필요가 있어 클래스 써주어야 함. -->
       <!-- 상태바와 마찬가지로 헤더 내용도 BEM 방식으로 class 명 작성. 나중에 CSS 작성 시 편리해짐. -->
       <h1 class="welcome-header__title">Welcome to KoKoa Clone</h1>
-      <h2 class="welcome-header__text">
+      <p class="welcome-header__text">
         If you have a KoKoa Account, log in with your email or phone number
-      </h2>
+      </p>
     </header>
+
     <!-- 폼, 버튼을 포함한 모든 것들을 form 안으로. -->
     <form id="login-form">
       <!-- form의 경우 이번 프로젝트에서 많이 쓰이지 않으므로 class 설정해주지 않아도 괜찮음. 연습용으로 이번엔 id를 줄 것임. -->
-      <input type="text" placehodler="Email or phone number" />
-      <input type="password" placehodler="Password" />
+      <input type="text" placeholder="Email or phone number" />
+      <input type="password" placeholder="Password" />
       <!-- 폼에서 버튼 만드는 법 (1)아래와 같이 type="submit" 사용 (2)<button>태그 사용 -->
       <input type="submit" value="Log In" />
       <input type="submit" value="Sign Up" />
