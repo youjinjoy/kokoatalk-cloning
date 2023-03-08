@@ -45,10 +45,10 @@
     </header>
 
     <!-- 폼, 버튼을 포함한 모든 것들을 form 안으로. -->
-    <form id="login-form">
+    <form action="friends.html" method="get" id="login-form">
       <!-- form의 경우 이번 프로젝트에서 많이 쓰이지 않으므로 class 설정해주지 않아도 괜찮음. 연습용으로 이번엔 id를 줄 것임. -->
-      <input type="text" placeholder="Email or phone number" />
-      <input type="password" placeholder="Password" />
+      <input name="username" type="text" placeholder="Email or phone number" />
+      <input name="password" type="password" placeholder="Password" />
       <!-- 폼에서 버튼 만드는 법 (1)아래와 같이 type="submit" 사용 (2)<button>태그 사용 -->
       <input type="submit" value="Log In" />
       <input type="submit" value="Sign Up" />
