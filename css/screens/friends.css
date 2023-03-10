@@ -1,0 +1,37 @@
+#friends-display-link{
+    margin-bottom: 5px;
+    padding: 15px 0;
+    background-color: #fafafa;
+    font-weight: 600;
+
+    text-align: center;
+    display: block; /* 이렇게 해줌으로써 의도한 text-align:center으로 보임 */
+}
+#friends-display-link i{
+    color: rgba(128,128,128,0.3);
+}
+#friends-display-link i:last-child{
+    margin-left: 10px;
+}
+
+.friends-screen{
+    padding: 0px var(--horizontal-space);
+}
+.friends-screen__channel{
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(0,0,0,0.2);
+}
+.friends-screen__channel-header{
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 15px;
+}
+.friends-screen__channel-header span{
+    font-size: 12px;
+}
+.friends-screen__channel-header i{
+    transform: scale(0.8);
+    color: rgba(0,0,0,0.3);
+}

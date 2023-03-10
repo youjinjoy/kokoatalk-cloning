@@ -1,3 +1,4 @@
 :root{
     --yellow: #FAE100;
+    --horizontal-space: 20px; /* 스크린의 옆에 적용되는 일정한 마진 또는 패딩을 위한 요소 */
 }

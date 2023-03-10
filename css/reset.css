@@ -46,3 +46,13 @@ table {
 input:focus{
 	outline: none; /*input 클릭하면 검은색 outline이 나타났지만 이제 더이상 나타나지 않음*/
 }
+
+/* link에 default 값 주기 */
+a{
+	color: inherit;
+	text-decoration: none; /* 링크에 밑줄 원치 않기 때문에 */
+}
+
+img{
+	object-fit: cover; /* 정해진 height, width에 이미지 축소될 때 가로 또는 세로가 잘려도 그 비율 유지 */
+}

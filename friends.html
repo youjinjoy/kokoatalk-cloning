@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to KoKoa Clone</title>
+    <title>Friends - KoKoa Clone</title>
   </head>
   <body>
     <!-- 상태바 -->
@@ -32,8 +32,97 @@
       </div>
     </div>
 
+    <!-- 헤더 -->
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icons">
+        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        <span><i class="fa-solid fa-music"></i></span>
+        <span><i class="fa-solid fa-gear"></i></span>
+      </div>
+    </header>
+
+    <!-- Friends 스크린 상단-->
+    <a id="friends-display-link" href="#">
+      <i class="fa-solid fa-circle-info"></i> Friends' Names Display
+      <i class="fa-solid fa-chevron-right fa-xs"></i>
+    </a>
+    <!-- Friends 스크린 -->
+    <main class="friends-screen">
+      <!-- User 정보-->
+      <div class="user-component">
+        <!-- 단축키: .user-component__column*2 -->
+        <div class="user-component__column">
+          <img
+            src="https://pbs.twimg.com/media/A-x7RypCEAAyhXr.jpg"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <!-- user-component__avatar--xl를 써서 user-componet__avatar 클래스의 큰 버전이라는 걸 나타냄 -->
+          <div class="user-component__text">
+            <h4 class="user-component__title">Po</h4>
+            <h6 class="user-component__subtitle">Play with me!</h6>
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Channel</span>
+          <i class="fa-solid fa-chevron-up"></i>
+        </div>
+        <div class="user-component">
+          <!-- 단축키: .user-component__column*2 -->
+          <div class="user-component__column">
+            <img
+              src="https://pbs.twimg.com/media/A-x7RypCEAAyhXr.jpg"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <!-- user-component__avatar--xl를 써서 user-componet__avatar 클래스의 큰 버전이라는 걸 나타냄 -->
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Channel
+              </h4>
+              <!-- <h6 class="user-component__subtitle"></h6> -->
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span>2</span>
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <!-- 네비게이션바 -->
-    <nav></nav>
+    <!-- navigation은 보통 ul로 나눠지고 그 안에 많은 li로 구성되어 있다. li 안에는 링크인 a가 있다. 단축키: nav>ul>li*4>a -->
+    <!-- 검색엔진 구글도 navigation을 찾아서 ul의 li 안에 있는 link를 가져오게끔 설정되어 있다. -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__button">
+          <a class="nav__link" href="#">
+            <i class="fa-solid fa-user fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__button">
+          <a class="nav__link" href="#">
+            <span class="nav__notification">1</span>
+            <!-- 메세지 위에 1 알림 -->
+            <i class="fa-regular fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__button">
+          <a class="nav__link" href="#">
+            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__button">
+          <a class="nav__link" href="#">
+            <span class="nav__notification"></span>
+            <i class="fa-solid fa-ellipsis fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </body>
   <script
     src="https://kit.fontawesome.com/612dc86cae.js"
