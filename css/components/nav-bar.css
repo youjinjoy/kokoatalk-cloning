@@ -19,18 +19,3 @@
         color: #2F363E; /* 링크 관련 default 값이 reset.css에 있으나 개별적으로 색깔 정해준 것 */
         position: relative; /* 자식인 .nav__notification의 position이 absolute이므로 설정해준 속성 */
     }
-    
-/* 메세지 위에 1 알림 */
-.nav__notification{
-    position: absolute; /* 주의: 가장 가까운 부모를 relative로 만들기!! */
-    left: 20px;
-    bottom: 16px;
-}
-
-.nav__button:last-child .nav__notification{
-    height: 5px;
-    width: 5px;
-
-    left: 25px;
-    bottom: 25px;
-}

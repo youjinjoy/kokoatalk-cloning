@@ -1,0 +1,170 @@
+<!-- screenshot\05.png 와 매칭됨. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find - KoKoa Clone</title>
+  </head>
+  <body>
+    <!-- 상태바 -->
+    <div class="status-bar">
+      <!-- 상태바를 보면 3개의 column을 가지고 있어 class가 status-bar인 div 안에 3개의 div를 만들어준다. -->
+      <div class="status-bar__column">
+        <!-- column은 너무 흔해 어떤 것의 column인지 헷갈리니까 클래스 이름으로 쓰는게 좋음. BEM 방식 사용.-->
+        <!-- Wifi Icon (From FontAwesome) -->
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+        <!-- 참고: fa-2x, fa-lg 등 클래스에 추가하여 아이콘 크기 조절 가능-->
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>50%</span>
+        <!-- Battery Icon (From FontAweSome)-->
+        <i class="fa-solid fa-battery-half" style="color: rgb(75, 211, 37)"></i>
+        <!-- Lightning Icon Icon (From FontAwesome)-->
+        <i class="fa-solid fa-bolt-lightning"></i>
+        <!-- FontAwesome에서 Code Kit 복사/붙여넣기 해준 것 -->
+      </div>
+    </div>
+
+    <!-- 헤더 -->
+    <header class="screen-header">
+      <h1 class="screen-header__title">Find</h1>
+      <div class="screen-header__icons">
+        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        <span>
+          <i class="fa-solid fa-gear">
+            <div
+              class="badge__notification badge badge__small badge__top-right"
+            ></div>
+            <!-- 메세지 위에 작은 알림 -->
+          </i>
+        </span>
+      </div>
+    </header>
+
+    <!-- 메인 스크린 -->
+    <main class="main-screen">
+      <div class="find-icons">
+        <div class="find-icons__icon">
+          <i class="fa-solid fa-qrcode"></i>
+          <span>QR Code</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fa-solid fa-address-book"></i>
+          <span>Add by Contacts</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fa-solid fa-keyboard"></i>
+          <span>Add by ID</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fa-solid fa-envelope"></i>
+          <span>Invite</span>
+        </div>
+      </div>
+      <!-- Recommended Friends -->
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">Recommended Friends</h6>
+        <span>You have no recommended friends</span>
+      </div>
+      <!-- Open Chat -->
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4>Open Chat</h4>
+          <span>
+            Go to Openchat Home
+            <i class="fa-solid fa-chevron-right"></i>
+          </span>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">Do you like Cookies?</h5>
+            <h6 class="open-post__hashtags">#tubby#toast</h6>
+            <div class="open-post__members">
+              <img
+                src="https://content-us.teletubbies.com/uploads/2016/01/toast-1.png"
+              />
+              <span class="open-post__members--count">4 members</span>
+              <div class="divider"></div>
+              <span class="open-post__members--status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img
+                src="https://i1.sndcdn.com/artworks-000122335681-cwrmdv-t500x500.jpg"
+              />
+              <div class="open-post__heart-count">
+                <i class="fa-solid fa-heart fa-xs"></i>
+                <span>4</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="open-post">
+          <div class="open-post__column">
+            <h5 class="open-post__title">Do you like Cookies?</h5>
+            <h6 class="open-post__hashtags">#tubby#toast</h6>
+            <div class="open-post__members">
+              <img
+                src="https://content-us.teletubbies.com/uploads/2016/01/toast-1.png"
+              />
+              <span class="open-post__members--count">4 members</span>
+              <div class="divider"></div>
+              <span class="open-post__members--status">Active</span>
+            </div>
+          </div>
+          <div class="open-post__column">
+            <div class="open-post__photo">
+              <img
+                src="https://i1.sndcdn.com/artworks-000122335681-cwrmdv-t500x500.jpg"
+              />
+              <div class="open-post__heart-count">
+                <i class="fa-solid fa-heart fa-xs"></i>
+                <span>4</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- 네비게이션바 -->
+    <!-- navigation은 보통 ul로 나눠지고 그 안에 많은 li로 구성되어 있다. li 안에는 링크인 a가 있다. 단축키: nav>ul>li*4>a -->
+    <!-- 검색엔진 구글도 navigation을 찾아서 ul의 li 안에 있는 link를 가져오게끔 설정되어 있다. -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__button">
+          <a class="nav__link" href="friends.html">
+            <i class="fa-regular fa-user fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__button">
+          <a class="nav__link" href="chats.html">
+            <i class="fa-regular fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__button">
+          <a class="nav__link" href="find.html">
+            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__button">
+          <a class="nav__link" href="more.html">
+            <i class="fa-solid fa-ellipsis fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/612dc86cae.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

@@ -1,4 +1,5 @@
-<!-- screenshot\03.png 와 매칭됨. -->
+<!-- screenshot\04.png 와 매칭됨. -->
+<!-- chats.html의 경우 screens 폴더 내 직접 연결되는 css파일이 없는데, 이는 Chats가 전부 components로 구성되어 있기 때문이다. -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,7 +7,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends - KoKoa Clone</title>
+    <title>Chats - KoKoa Clone</title>
   </head>
   <body>
     <!-- 상태바 -->
@@ -67,6 +68,27 @@
           <!-- 메세지 옆에 1 알림 -->
         </div>
       </div>
+      <div class="user-component">
+        <!-- 단축키: .user-component__column*2 -->
+        <div class="user-component__column">
+          <img
+            src="https://mblogthumb-phinf.pstatic.net/20131213_104/luralalablog_13869192977239sr4o_JPEG/kkm8.jpg?type=w2"
+            class="user-component__avatar user-component__avatar-"
+          />
+          <!-- user-component__avatar--xl를 써서 user-componet__avatar 클래스의 큰 버전이라는 걸 나타냄 -->
+          <div class="user-component__text">
+            <h4 class="user-component__title">Laa Laa</h4>
+            <h6 class="user-component__subtitle">
+              Hey, the weather is so nice. Let's go out and play.
+            </h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <span class="user-component__column--time">21:22</span>
+          <div class="badge">1</div>
+          <!-- 메세지 옆에 1 알림 -->
+        </div>
+      </div>
     </main>
 
     <!-- 네비게이션바 -->
@@ -81,7 +103,7 @@
         </li>
         <li class="nav__button">
           <a class="nav__link" href="chats.html">
-            <span class="nav__notification badge">1</span>
+            <span class="badge__notification badge">1</span>
             <!-- 메세지 위에 1 알림 -->
             <i class="fa-solid fa-comment fa-2x"></i>
           </a>
@@ -93,7 +115,12 @@
         </li>
         <li class="nav__button">
           <a class="nav__link" href="more.html">
-            <i class="fa-solid fa-ellipsis fa-2x"></i>
+            <i class="fa-solid fa-ellipsis fa-2x">
+              <div
+                class="badge__notification badge badge__small badge__top-right"
+              ></div>
+              <!-- 메세지 위에 작은 알림 -->
+            </i>
           </a>
         </li>
       </ul>

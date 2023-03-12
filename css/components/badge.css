@@ -1,5 +1,11 @@
-/* 메세지 위에 1 알림 */
+/* 위치: 아이콘 오른쪽 위에 붙어있음 */
+.badge__notification{
+    position: absolute; /* 주의: 가장 가까운 부모를 relative로 만들기!! */
+    left: 20px;
+    bottom: 16px;
+}
 
+/* 크기: 큼, 배경색: tomato, 글씨색깔: white, 모양: 원 */
 .badge{
     height: 20px;
     width: 20px;
@@ -11,4 +17,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* 크기: 작음 */
+.badge__small{
+    height: 5px;
+    width: 5px;
+}
+
+/* 위치: 아이콘 오른쪽 위에 떨어져 있음 */
+.badge__top-right{
+    left: 25px;
+    bottom: 25px;
 }

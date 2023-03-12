@@ -10,6 +10,13 @@
     font-weight: 700;
 }
 
-.screen-header__icons *{
-    margin-left: 10px;
+.screen-header__icons span{
+    margin-left: 25px;
+    position: relative;
+}
+
+.header__notification{
+    position: absolute; /* 주의: 가장 가까운 부모를 relative로 만들기!! */
+    left: 20px;
+    bottom: 16px;
 }
