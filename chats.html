@@ -34,67 +34,37 @@
 
     <!-- 헤더 -->
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">Chats</h1>
       <div class="screen-header__icons">
         <span><i class="fa-solid fa-magnifying-glass"></i></span>
+        <span><i class="fa-solid fa-comment-dots"></i></span>
         <span><i class="fa-solid fa-music"></i></span>
         <span><i class="fa-solid fa-gear"></i></span>
       </div>
     </header>
 
-    <!-- Friends 스크린 상단-->
-    <a id="friends-display-link" href="#">
-      <i class="fa-solid fa-circle-info"></i> Friends' Names Display
-      <i class="fa-solid fa-chevron-right fa-xs"></i>
-    </a>
-    <!-- Friends 스크린 -->
-    <main class="friends-screen">
+    <!-- Chats 스크린 -->
+    <main class="main-screen">
       <!-- User 정보-->
       <div class="user-component">
         <!-- 단축키: .user-component__column*2 -->
         <div class="user-component__column">
           <img
-            src="https://pbs.twimg.com/media/A-x7RypCEAAyhXr.jpg"
-            class="user-component__avatar user-component__avatar--xl"
+            src="https://img.mbn.co.kr/filewww/news/other/2014/12/24/211011371202.jpg"
+            class="user-component__avatar user-component__avatar-"
           />
           <!-- user-component__avatar--xl를 써서 user-componet__avatar 클래스의 큰 버전이라는 걸 나타냄 -->
           <div class="user-component__text">
-            <h4 class="user-component__title">Po</h4>
-            <h6 class="user-component__subtitle">Play with me!</h6>
+            <h4 class="user-component__title">KokoaTalk</h4>
+            <h6 class="user-component__subtitle">
+              Please check My Kokoa Talk Info
+            </h6>
           </div>
         </div>
-        <div class="user-component__column"></div>
-      </div>
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <i class="fa-solid fa-chevron-up"></i>
-        </div>
-        <div class="user-component">
-          <!-- 단축키: .user-component__column*2 -->
-          <div class="user-component__column">
-            <img
-              src="https://pbs.twimg.com/media/A-x7RypCEAAyhXr.jpg"
-              class="user-component__avatar user-component__avatar--sm"
-            />
-            <!-- user-component__avatar--xl를 써서 user-componet__avatar 클래스의 큰 버전이라는 걸 나타냄 -->
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                Channel
-              </h4>
-              <!-- <h6 class="user-component__subtitle"></h6> -->
-            </div>
-          </div>
-          <div class="user-component__column">
-            <div>
-              <span>2</span>
-              <i class="fa-solid fa-chevron-right"></i>
-            </div>
-            <!-- css파일을 보면 user-component__column:last-child 조건이 붙어있는데, 
-                해당 flex를 적용하고 싶지 않은 요소가 있다면
-                그 요소를 "div"로 씌우면 "부모-자식 관계"가 아닌 "부모-손자 관계"이므로
-                => Flex의 영향권에서 벗어날 수 있다 -->
-          </div>
+        <div class="user-component__column">
+          <span class="user-component__column--time">21:22</span>
+          <div class="badge">1</div>
+          <!-- 메세지 옆에 1 알림 -->
         </div>
       </div>
     </main>
@@ -106,14 +76,14 @@
       <ul class="nav__list">
         <li class="nav__button">
           <a class="nav__link" href="friends.html">
-            <i class="fa-solid fa-user fa-2x"></i>
+            <i class="fa-regular fa-user fa-2x"></i>
           </a>
         </li>
         <li class="nav__button">
           <a class="nav__link" href="chats.html">
             <span class="nav__notification badge">1</span>
             <!-- 메세지 위에 1 알림 -->
-            <i class="fa-regular fa-comment fa-2x"></i>
+            <i class="fa-solid fa-comment fa-2x"></i>
           </a>
         </li>
         <li class="nav__button">

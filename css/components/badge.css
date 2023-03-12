@@ -1,0 +1,14 @@
+/* 메세지 위에 1 알림 */
+
+.badge{
+    height: 20px;
+    width: 20px;
+    background-color:#FF6229;
+    color: white;
+    border-radius:50%;
+    font-size: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

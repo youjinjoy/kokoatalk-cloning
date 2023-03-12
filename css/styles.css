@@ -15,6 +15,7 @@ Google Font 검색 - 폰트 선택 - 폰트 옵션 선택 - 오른쪽 상단 Sel
 @import "components/screen-header.css";
 @import "components/nav-bar.css";
 @import "components/user-component.css";
+@import "components/badge.css";
 
 /* screens */
 @import "screens/login.css";
@@ -25,5 +26,11 @@ body{
     /* -apple-system 글꼴이 없다면 다음 글꼴로 BlinkMacSystemFont, 없다면 다음 글꼴로 Segoe UI, ... 선택함. */
 
     color:#2F363E;
+}
+
+/* Chats.html */
+.main-screen{
+    padding: 0 var(--horizontal-space);
+    margin-top: 10px;
 }
 
