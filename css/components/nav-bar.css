@@ -2,9 +2,10 @@
     position: fixed; /* 스크린 하단에 네비게이션 바 고정 */
     bottom: 0;
     width:100%;
+    font-size: 12px;
 }
 .nav__list{
-    padding: 15px 50px;
+    padding: 11px 50px;
     
     background-color:#F9F9FA;
     border-top: 1px solid rgba(0,0,0,0.1);

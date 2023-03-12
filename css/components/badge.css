@@ -1,14 +1,14 @@
 /* 위치: 아이콘 오른쪽 위에 붙어있음 */
 .badge__notification{
     position: absolute; /* 주의: 가장 가까운 부모를 relative로 만들기!! */
-    left: 20px;
-    bottom: 16px;
+    left: 15px;
+    bottom: 13px;
 }
 
 /* 크기: 큼, 배경색: tomato, 글씨색깔: white, 모양: 원 */
 .badge{
-    height: 20px;
-    width: 20px;
+    height: 18px;
+    width: 18px;
     background-color:#FF6229;
     color: white;
     border-radius:50%;
@@ -27,6 +27,16 @@
 
 /* 위치: 아이콘 오른쪽 위에 떨어져 있음 */
 .badge__top-right{
-    left: 25px;
-    bottom: 25px;
+    left: 20px;
+    bottom: 21px;
+}
+.badge__top-right--far{
+    left: 24px;
+    bottom: 26px;
+}
+
+/* more.css 에서 ! 아이콘에 대한 색깔 및 마진 추가 */
+.badge-icon-color{
+    margin-left: 5px;
+    color: #FF6229;
 }

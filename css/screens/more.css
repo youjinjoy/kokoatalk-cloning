@@ -1,0 +1,81 @@
+
+.more-screen .icon-row{
+    margin-top: 30px;
+    border:none;
+}
+
+
+.more-screen .icon-row div{
+    width: 100%;
+}
+.more-screen .icon-row div .badge__small{
+    width: 5px;
+}
+.more-screen .icon-row div .badge__top-right-far{
+    bottom: 30px;
+    left: 30px;
+}
+
+.more-screen .user-component__column:last-child{
+    font-size: 35px;
+    color: var(--main-color);
+}
+
+.more-screen .icon-row__icon{
+    margin-bottom: -25px;
+}
+
+.more-screen .icon-row__icon i{
+    margin-bottom: 10px;
+}
+.more-screen .icon-row__icon span{
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(0,0,0,0.6);
+
+    text-align: center;
+}
+
+.more-suggestions{
+    border-top: var(--main-border);
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.more-suggestions__title{
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.more-suggestions__icons{
+    display: flex;
+    justify-content: space-around;
+}
+.more-suggestions__icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0 10px;
+
+    width: 100%;
+}
+.more-screen .icon-row i{
+    position: relative;
+}
+.more-suggestions__icon-image{
+    width: 50px;
+    height: 50px;
+    border: var(--main-border);
+    border-color: var(--gray-font);
+    border-radius: 5px;
+    background-color: var(--yellow);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.more-suggestions__icon-text{
+    margin-top: 10px;
+    font-size: 15px;
+
+    text-align: center;
+}
