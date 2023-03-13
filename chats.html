@@ -26,7 +26,7 @@
       <div class="status-bar__column">
         <span>50%</span>
         <!-- Battery Icon (From FontAweSome)-->
-        <i class="fa-solid fa-battery-half" style="color: rgb(75, 211, 37)"></i>
+        <i class="fa-solid fa-battery-half"></i>
         <!-- Lightning Icon Icon (From FontAwesome)-->
         <i class="fa-solid fa-bolt-lightning"></i>
         <!-- FontAwesome에서 Code Kit 복사/붙여넣기 해준 것 -->
@@ -41,7 +41,7 @@
         <span><i class="fa-solid fa-comment-dots"></i></span>
         <span><i class="fa-solid fa-music"></i></span>
         <span>
-          <a href="setting.html">
+          <a href="settings.html">
             <i class="fa-solid fa-gear"></i>
           </a>
         </span>
@@ -51,48 +51,52 @@
     <!-- Chats 스크린 -->
     <main class="main-screen">
       <!-- User 정보-->
-      <div class="user-component">
-        <!-- 단축키: .user-component__column*2 -->
-        <div class="user-component__column">
-          <img
-            src="https://img.mbn.co.kr/filewww/news/other/2014/12/24/211011371202.jpg"
-            class="user-component__avatar user-component__avatar-"
-          />
-          <!-- user-component__avatar--xl를 써서 user-componet__avatar 클래스의 큰 버전이라는 걸 나타냄 -->
-          <div class="user-component__text">
-            <h4 class="user-component__title">KokoaTalk</h4>
-            <h6 class="user-component__subtitle">
-              Please check My Kokoa Talk Info
-            </h6>
+      <a href="chat.html">
+        <div class="user-component">
+          <!-- 단축키: .user-component__column*2 -->
+          <div class="user-component__column">
+            <img
+              src="https://img.mbn.co.kr/filewww/news/other/2014/12/24/211011371202.jpg"
+              class="user-component__avatar user-component__avatar-"
+            />
+            <!-- user-component__avatar--xl를 써서 user-componet__avatar 클래스의 큰 버전이라는 걸 나타냄 -->
+            <div class="user-component__text">
+              <h4 class="user-component__title">KokoaTalk</h4>
+              <h6 class="user-component__subtitle">
+                Please check My Kokoa Talk Info
+              </h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__column--time">21:22</span>
+            <div class="badge">1</div>
+            <!-- 메세지 옆에 1 알림 -->
           </div>
         </div>
-        <div class="user-component__column">
-          <span class="user-component__column--time">21:22</span>
-          <div class="badge">1</div>
-          <!-- 메세지 옆에 1 알림 -->
-        </div>
-      </div>
-      <div class="user-component">
-        <!-- 단축키: .user-component__column*2 -->
-        <div class="user-component__column">
-          <img
-            src="https://mblogthumb-phinf.pstatic.net/20131213_104/luralalablog_13869192977239sr4o_JPEG/kkm8.jpg?type=w2"
-            class="user-component__avatar user-component__avatar-"
-          />
-          <!-- user-component__avatar--xl를 써서 user-componet__avatar 클래스의 큰 버전이라는 걸 나타냄 -->
-          <div class="user-component__text">
-            <h4 class="user-component__title">Laa Laa</h4>
-            <h6 class="user-component__subtitle">
-              Hey, the weather is so nice. Let's go out and play.
-            </h6>
+      </a>
+      <a href="chat.html">
+        <div class="user-component">
+          <!-- 단축키: .user-component__column*2 -->
+          <div class="user-component__column">
+            <img
+              src="https://mblogthumb-phinf.pstatic.net/20131213_104/luralalablog_13869192977239sr4o_JPEG/kkm8.jpg?type=w2"
+              class="user-component__avatar user-component__avatar-"
+            />
+            <!-- user-component__avatar--xl를 써서 user-componet__avatar 클래스의 큰 버전이라는 걸 나타냄 -->
+            <div class="user-component__text">
+              <h4 class="user-component__title">Laa Laa</h4>
+              <h6 class="user-component__subtitle">
+                Hey, the weather is so nice. Let's go out and play.
+              </h6>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span class="user-component__column--time">21:22</span>
+            <div class="badge">1</div>
+            <!-- 메세지 옆에 1 알림 -->
           </div>
         </div>
-        <div class="user-component__column">
-          <span class="user-component__column--time">21:22</span>
-          <div class="badge">1</div>
-          <!-- 메세지 옆에 1 알림 -->
-        </div>
-      </div>
+      </a>
     </main>
 
     <!-- 네비게이션바 -->

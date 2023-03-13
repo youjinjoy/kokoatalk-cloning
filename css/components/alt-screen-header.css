@@ -1,0 +1,41 @@
+/* alternative screen header */
+
+.alt-header{
+    padding: var(--horizontal-space);
+    margin-top: 20px;
+    margin-bottom: 5px;
+
+    font-size: 25px;
+    font-weight: 500;
+
+    /* 한 요소를 정확히 가운데에 두기 위한 css hack [1]*/
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* alt header 고정. */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: inherit;
+}
+/* css hack [2] */
+.alt-header__column:first-child{
+    width: 33%;
+    display: flex;
+    justify-content: flex-start;
+}
+/* css hack [3] */
+.alt-header__column:nth-child(2){
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+/* css hack [4] */
+.alt-header__column:last-child{
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
+}

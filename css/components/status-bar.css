@@ -1,7 +1,7 @@
 /* .status-bar에서 No Service, Time, Battery를 한 줄에 놔준다. --> */
 .status-bar{
     
-    font-size: px;
+    font-size: 16px;
     font-weight: 500;
 
     display: flex;
@@ -16,6 +16,8 @@
     top: 0;
     width:100%;
     box-sizing: border-box;
+    
+    background-color: inherit;
 }
 
 .status-bar__column{
