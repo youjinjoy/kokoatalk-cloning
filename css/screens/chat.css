@@ -1,6 +1,6 @@
 #chat-screen{
     background-color: #d1abab;
-    height: 11000vh;
+    height: 150vh;
 }
 .chat-screen .alt-header__column:last-child i:last-child{
     margin-left: 25px;
@@ -13,6 +13,7 @@
 }
 .chat__timestamp{ 
     margin-top: 100px;
+    margin-bottom: 20px;
 
     font-size: 14px;
     color: white;
@@ -32,11 +33,127 @@
 /* message-row */
 .message-row{
     width: 100%;
+    margin-bottom: 20px;
 
     display: flex;
 }
+.message-row img{
+    margin-right: 10px;
+}
 .message__author{
-    margin-left: 10px;
+    display: block;
+
+    margin-top: 4px;
+    margin-bottom: 8px;
+
     font-size: 15px;
-    color: var(--gary-font);
+    color: var(--dark-gray);
+}
+.message__info{
+    display: flex;
+    align-items: flex-end;
+}
+.message__bubble{
+    background-color: white;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    
+    font-size: 18px;
+}
+.message__time{
+    font-size: 10px;
+    color: var(--dark-gray);
+
+    margin-left: 5px;
+    margin-bottom: 2px;
+    margin-right: 5px;
+}
+/* meessage-row--own */
+.message-row--own{
+    justify-content: flex-end;
+}
+.message-row--own .message__bubble{
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    background-color: var(--yellow);
+}
+
+.message-row--own .message__info{
+    flex-direction: row-reverse;
+}
+/*
+위의 row-reverse 대신 아래처럼 사용할 수도 있는데, order 속성은 flex children에게만 적용된다.
+.message-row--own .message__bubble{order:1;}
+.message-row--own .message__time{order: 0;}
+*/
+
+.reply{
+    position: fixed;
+    bottom:0;
+    width: 100%;
+    background-color: white;
+
+    box-sizing: border-box;
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 5px 20px;
+}
+.reply .reply__column:first-child{
+    margin-right: 20px;
+}
+.reply .reply__column:last-child{
+    width: 100%;
+    
+    position: relative;
+}
+.reply input{
+    height: 45px;
+    width: 100%;
+    border:var(--main-border);
+    border-radius: 45px;
+
+    
+    padding: 0;
+    padding-left: 15px;
+    padding-right: 90px;
+    box-sizing: border-box;
+}
+.reply .reply__column:first-child > i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+
+    color: var(--gray-font);
+    width: 25px;
+    height: 25px;
+    border: 2px solid var(--gray-font);
+    border-radius: 10px;
+}
+.reply__column:last-child > i, .reply__column:last-child button{
+    position: absolute;
+
+    margin-right: 20px;
+    right: -17px;
+    top: 3px;
+}
+.reply__column:last-child button{
+    background-color: var(--yellow);
+    width: 39px;
+    height: 39px;
+
+    border: var(--main-border);
+    border-radius: 50%;
+
+    font-size: 20px;
+}
+.reply__column:last-child >i{
+    font-size: 25px;
+    color: var(--gray-font);
+    right: 36px;
+    top: 10px;
 }
