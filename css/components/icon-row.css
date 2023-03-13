@@ -9,6 +9,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+
+    width: 25%;
 }
 /* fontawesome 아이콘 크기 조절 방법 중 하나 - 폰트 사이즈를 조절한다. */
 .icon-row__icon i{
@@ -18,5 +22,5 @@
 .icon-row__icon span{
     font-size: 15px;
     font-weight: 500;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
