@@ -11,6 +11,7 @@
     flex-direction: column;
     align-items: center;
 }
+
 .chat__timestamp{ 
     margin-top: 100px;
     margin-bottom: 20px;
@@ -28,6 +29,18 @@
     align-items: center;
 
     padding: 0 5px;
+
+    animation: fadeInStamp 0.8s linear;
+}
+/* Fade-in animation */
+@keyframes fadeInStamp{
+    from{
+        opacity: 0;
+    }
+    to{
+        transform: none;
+        opacity: 1;
+    }
 }
 
 /* message-row */
@@ -36,7 +49,41 @@
     margin-bottom: 20px;
 
     display: flex;
+    
+    opacity: 0;
+    animation: fadeInRow 0.8s linear forwards;
+    animation-delay: 1s;
 }
+/* Fade-in animation */
+@keyframes fadeInRow{
+    from{
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+    to{
+        transform: none;
+        opacity: 1;
+    }
+}
+.message-row:nth-child(3){
+    animation-delay: 2s;
+}
+.message-row:nth-child(4){
+    animation-delay: 3s;
+}
+.message-row:nth-child(5){
+    animation-delay: 4s;
+}
+.message-row:nth-child(6){
+    animation-delay: 5s;
+}
+.message-row:nth-child(7){
+    animation-delay: 6s;
+}
+.message-row:nth-child(8){
+    animation-delay: 7s;
+}
+
 .message-row img{
     margin-right: 10px;
 }
@@ -72,7 +119,23 @@
 /* meessage-row--own */
 .message-row--own{
     justify-content: flex-end;
+    opacity: 0;
+    animation: fadeInRowOwn 0.8s linear forwards;
+    animation-delay: 1.8s;
 }
+
+/* Fade-in animation */
+@keyframes fadeInRowOwn{
+    from{
+        transform: translateX(10px);
+        opacity: 0;
+    }
+    to{
+        transform: none;
+        opacity: 1;
+    }
+}
+
 .message-row--own .message__bubble{
     border-radius: 10px;
     border-top-right-radius: 0px;
@@ -101,7 +164,11 @@
     align-items: center;
 
     padding: 5px 20px;
+
+    transition: all 0.3s ease-in-out;
 }
+
+
 .reply .reply__column:first-child{
     margin-right: 20px;
 }
@@ -119,9 +186,41 @@
     
     padding: 0;
     padding-left: 15px;
-    padding-right: 90px;
-    box-sizing: border-box;
+    padding-right: 90px; /* input에 padding을 이렇게 주면 실제 입력할 수 있는 공간이 padding되는 것을 볼 수 있다*/
+    box-sizing: border-box; /* 스크린 크기 조절해도 input 박스의 크기가 변하지 않도록*/
+
+    transition: all .3s ease-in-out;
 }
+
+/*
+input칸에 대한 pseudo selector, transform, transition.
+To do: 큰 화면에서 볼 때는 문제 있음. 추후 수정해야.
+*/
+.reply__column button i{
+    opacity: 1;
+}
+.reply__column button:focus,
+.reply__column button:active{
+    outline: none;
+}
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-face-smile,
+.reply:focus-within button{
+    opacity: 0;
+}
+.reply:focus-within input{
+    width: 110%;
+    transform: translateX(-10%) translateY(-80px);
+}
+.reply .reply__column:first-child,
+.reply .fa-face-smile,
+.reply button{
+    transition: opacity 0.3s ease-in-out;
+}
+.reply:focus-within{
+    transform: translateY(80px);
+}
+
 .reply .reply__column:first-child > i{
     display: flex;
     justify-content: center;
@@ -135,7 +234,7 @@
     border-radius: 10px;
 }
 .reply__column:last-child > i, .reply__column:last-child button{
-    position: absolute;
+    position: absolute; /* position이 absolute일 때는 top, right 등을 직접 구해봐야한다.*/
 
     margin-right: 20px;
     right: -17px;

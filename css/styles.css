@@ -18,6 +18,7 @@ Google Font 검색 - 폰트 선택 - 폰트 옵션 선택 - 오른쪽 상단 Sel
 @import "components/badge.css";
 @import "components/icon-row.css";
 @import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
 
 /* screens */
 @import "screens/login.css";
@@ -41,4 +42,3 @@ body{
     padding: 0 var(--horizontal-space);
     margin-top: 10px;
 }
-

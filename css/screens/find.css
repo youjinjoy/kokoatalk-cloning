@@ -120,3 +120,26 @@
     margin-bottom: 10px;
     border-bottom: var(--main-border);
 }
+
+/* animation */
+@keyframes heartBeat{
+    0%{
+        transfor: none
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: none;
+    }
+}
+
+.open-post__heart-count .fa-heart:hover{
+    will-change: transform;
+    /*
+    will-change는 애니메이션이 좀 더 부드럽게 동작할 수 있게 한다. 
+    → 브라우저에게 어떤 것이 변할 것인지 예고해주는 것. 여기서는 transform이 변할 것이라고 예고해주는 것.
+    will-change는 그래픽 카드를 이용해서 애니메이션을 가속화 한다.*/
+    color: tomato;
+    animation:heartBeat 1s ease-in-out infinite;
+}

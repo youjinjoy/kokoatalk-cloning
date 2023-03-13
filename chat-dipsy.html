@@ -1,0 +1,128 @@
+<!-- screenshot\07.png 와 매칭됨. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat - KoKoa Clone</title>
+  </head>
+  <body id="chat-screen">
+    <!-- 상태바 -->
+    <div class="status-bar">
+      <!-- 상태바를 보면 3개의 column을 가지고 있어 class가 status-bar인 div 안에 3개의 div를 만들어준다. -->
+      <div class="status-bar__column">
+        <!-- column은 너무 흔해 어떤 것의 column인지 헷갈리니까 클래스 이름으로 쓰는게 좋음. BEM 방식 사용.-->
+        <!-- Wifi Icon (From FontAwesome) -->
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+        <!-- 참고: fa-2x, fa-lg 등 클래스에 추가하여 아이콘 크기 조절 가능-->
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>50%</span>
+        <!-- Battery Icon (From FontAweSome)-->
+        <i class="fa-solid fa-battery-half"></i>
+        <!-- Lightning Icon Icon (From FontAwesome)-->
+        <i class="fa-solid fa-bolt-lightning"></i>
+        <!-- FontAwesome에서 Code Kit 복사/붙여넣기 해준 것 -->
+      </div>
+    </div>
+
+    <!-- 헤더 -->
+    <header class="alt-header chat-screen">
+      <div class="alt-header__column">
+        <a href="javascript:history.back();">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <span>Dipsy</span>
+      </div>
+      <div class="alt-header__column">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+    </header>
+
+    <!-- 메인 스크린   -->
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Monday, March 14, 2023</div>
+
+      <!-- 첫 번째 말풍선 -->
+      <div class="message-row">
+        <img
+          class="user-component__avatar--sm"
+          src="https://i.pinimg.com/736x/e0/ce/ca/e0ceca07f967d3c29228b77f481d9ae6.jpg"
+        />
+        <div class="message-row__content">
+          <span class="message__author">Dipsy</span>
+          <div class="message__info">
+            <span class="message__bubble">Hey</span>
+            <span class="message__time">20:15</span>
+          </div>
+        </div>
+      </div>
+      <!-- 두 번째 말풍선 -->
+      <div class="message-row">
+        <img
+          class="user-component__avatar--sm"
+          src="https://i.pinimg.com/736x/e0/ce/ca/e0ceca07f967d3c29228b77f481d9ae6.jpg"
+        />
+        <div class="message-row__content">
+          <span class="message__author">Dipsy</span>
+          <div class="message__info">
+            <span class="message__bubble"
+              >I went to the market yesterday and bought this hat.</span
+            >
+            <span class="message__time">20:15</span>
+          </div>
+        </div>
+      </div>
+      <!-- 세 번째 말풍선 -->
+      <div class="message-row">
+        <img
+          class="user-component__avatar--sm"
+          src="https://i.pinimg.com/736x/e0/ce/ca/e0ceca07f967d3c29228b77f481d9ae6.jpg"
+        />
+        <div class="message-row__content">
+          <span class="message__author">Dipsy</span>
+          <div class="message__info">
+            <span class="message__bubble">Look at this beautiful pattern.</span>
+            <span class="message__time">20:16</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- 텍스트 입력 칸 -->
+    <form class="reply">
+      <div class="reply__column">
+        <i class="fa-solid fa-plus"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="fa-regular fa-face-smile"></i>
+        <button>
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+
+    <!-- 큰 화면 방지 -->
+    <div id="no-mobile">
+      <span>Your Screen is too big.</span>
+    </div>
+    <!-- 가로모드 방지
+    <div id="no-landscape">
+      <span>Please rotate your phone.</span>
+    </div> -->
+    <script
+      src="https://kit.fontawesome.com/612dc86cae.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -47,8 +47,19 @@
     <!-- 폼, 버튼을 포함한 모든 것들을 form 안으로. -->
     <form action="friends.html" method="get" id="login-form">
       <!-- form의 경우 이번 프로젝트에서 많이 쓰이지 않으므로 class 설정해주지 않아도 괜찮음. 연습용으로 이번엔 id를 줄 것임. -->
-      <input name="username" type="text" placeholder="Email or phone number" />
-      <input name="password" type="password" placeholder="Password" />
+      <input
+        name="username"
+        type="text"
+        placeholder="Email or phone number"
+        required
+      />
+      <input
+        name="password"
+        type="password"
+        placeholder="Password"
+        minlength="4"
+        required
+      />
       <!-- 폼에서 버튼 만드는 법 (1)아래와 같이 type="submit" 사용 (2)<button>태그 사용 -->
       <input type="submit" value="Log In" />
       <input type="submit" value="Sign Up" />
@@ -57,9 +68,17 @@
       <!-- href="#": same page-->
       <a href="#">Find KoKoa Account or Password</a>
     </form>
+    <!-- 큰 화면 방지 -->
+    <div id="no-mobile">
+      <span>Your Screen is too big.</span>
+    </div>
+    <!-- 가로모드 방지
+    <div id="no-landscape">
+      <span>Please rotate your phone.</span>
+    </div> -->
+    <script
+      src="https://kit.fontawesome.com/612dc86cae.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
-  <script
-    src="https://kit.fontawesome.com/612dc86cae.js"
-    crossorigin="anonymous"
-  ></script>
 </html>

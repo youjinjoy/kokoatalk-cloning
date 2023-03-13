@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Setting - KoKoa Clone</title>
+    <title>Chat - KoKoa Clone</title>
   </head>
   <body id="chat-screen">
     <!-- 상태바 -->
@@ -75,6 +75,7 @@
       </div>
     </main>
 
+    <!-- 텍스트 입력 칸 -->
     <form class="reply">
       <div class="reply__column">
         <i class="fa-solid fa-plus"></i>
@@ -87,9 +88,18 @@
         </button>
       </div>
     </form>
+
+    <!-- 큰 화면 방지 -->
+    <div id="no-mobile">
+      <span>Your Screen is too big.</span>
+    </div>
+    <!-- 가로모드 방지
+    <div id="no-landscape">
+      <span>Please rotate your phone.</span>
+    </div> -->
+    <script
+      src="https://kit.fontawesome.com/612dc86cae.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
-  <script
-    src="https://kit.fontawesome.com/612dc86cae.js"
-    crossorigin="anonymous"
-  ></script>
 </html>

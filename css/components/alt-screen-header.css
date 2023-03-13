@@ -20,6 +20,8 @@
     width: 100%;
     box-sizing: border-box;
     background-color: inherit;
+
+    z-index: 1;
 }
 /* css hack [2] */
 .alt-header__column:first-child{

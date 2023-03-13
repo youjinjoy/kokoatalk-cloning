@@ -3,6 +3,8 @@
     position: absolute; /* 주의: 가장 가까운 부모를 relative로 만들기!! */
     left: 15px;
     bottom: 13px;
+
+    animation: notificationAnimation 2s ease-in-out infinite;
 }
 
 /* 크기: 큼, 배경색: tomato, 글씨색깔: white, 모양: 원 */
@@ -39,4 +41,32 @@
 .badge-icon-color{
     margin-left: 5px;
     color: #FF6229;
+}
+
+/* animation */
+@keyframes notificationAnimation{
+    0%{
+        transform: none;
+    }
+    20%{
+        transform: scale(1.2);
+    }
+    40%{
+        transform: none;
+    }
+    60%{
+        transform: rotateZ(25deg);
+    }
+    70%{
+        transform: rotateZ(-10deg);
+    }
+    80%{
+        transform: rotateZ(25deg);
+    }
+    90%{
+        transform: rotateZ(-10deg);
+    }
+    100%{
+        trnasform: none;
+    }
 }

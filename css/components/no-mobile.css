@@ -1,0 +1,37 @@
+#no-mobile {
+    position: absolute;
+    z-index: 99;
+    height: 100vh;
+    background-color: var(--sub-color);
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    top: 0;
+}
+@media screen and (max-width: 645px){
+    #no-mobile{
+        display: none;
+    }
+}
+/* 또는 min-width로 하고 display: flex;라고 해도 된다. */
+
+/* 가로모드 방지
+ #no-landscape {
+    position: absolute;
+    z-index: 99;
+    height: 100vh;
+    background-color: var(--sub-color);
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    top: 0;
+}
+@media screen and (orientation: portrait){
+    #no-landscape{
+        display: none;
+    }
+} */

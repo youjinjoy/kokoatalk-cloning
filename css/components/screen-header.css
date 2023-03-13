@@ -8,6 +8,7 @@
 
     font-size: 25px;
     font-weight: 700;
+
 }
 
 .screen-header__icons span{
@@ -19,4 +20,17 @@
     position: absolute; /* 주의: 가장 가까운 부모를 relative로 만들기!! */
     left: 20px;
     bottom: 16px;
+}
+
+/* animation */
+@keyframes rotateGear{
+    from{
+        transform: none;
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+.screen-header__icons .fa-gear:hover{ /* hover 상태일 때만 적용 */
+    animation: rotateGear 1s linear infinite;
 }
